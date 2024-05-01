@@ -110,7 +110,7 @@
 <main style="margin-top: 0; display: flex; justify-content: end">
 	<div id="main-container" class="container container-fluid pt-3 leaderboard-container">
 		<div id="sub-nav-buttons-container" class="container">
-			<a href="../statistics.html" class="sub-nav-button"><h2  class="text-black-50">Статистика</h2></a>
+			<a href="../statistics.html" class="sub-nav-button"><h2 class="text-black-50">Статистика</h2></a>
 			<a href="trainee.html" class="sub-nav-button active-tab"><h2>Карта компетенций</h2></a>
 		</div>
 		<div id="filter" class="container mt-2">
@@ -119,14 +119,14 @@
 			<a href="middle.html" class="btn level-button btn-outline-success active text-decoration-none">Middle</a>
 			<a href="senior.html" class="btn level-button btn-outline-success">Senior</a>
 		</div>
-
 		<div id="competency-matrix" class="row text-center mt-4">
 			<!--- Одно направление --->
 			<div class="div col-3">
 				<!---------Название одного курса------->
 				<div class="container">
 					<p class="leaderboard-name profession-name">FrontEnd</p>
-					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example" aria-valuenow="25"
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
 						aria-valuemin="0"
 						aria-valuemax="100">
 						<div class="progress-bar bg-danger" style="width: 25%"></div>
@@ -134,17 +134,45 @@
 				</div>
 				<!------------------------------------>
 			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card"><p class="course-card-text">SEO</p></div>
-			<div class="div col-2 course-type-card"><p class="course-card-text">Подготовка верстки для систем управления
-				контентом</p></div>
-			<div class="div col-2 course-type-card"><p class="course-card-text">Софтскиллы для разработчиков</p></div>
+			<!---- Это катается на каруселях -------->
+			<!---- Я считаю это победа --------->
+			<div id="carousel1" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+													<div class="div col-3 course-type-card"><img src="../../assets/sun.png" class="h-100" alt=""></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Подготовка верстки для систем управления
+								контентом</p></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Софтскиллы для разработчиков</p></div>
+						</div>
+					</div>
+					<div class="carousel-item"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+							<div class="course-type-card col-3"><p class="course-card-text">SEO2</p></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Подготовка верстки для систем управления2
+								контентом</p></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Софтскиллы для разработчиков2</p></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!--------------------------------------->
+
 			<!--- Одно направление --->
 			<div class="div col-3">
 				<!---------Название одного курса------->
 				<div class="container">
 					<p class="leaderboard-name profession-name">Backend</p>
-					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example" aria-valuenow="25"
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
 						aria-valuemin="0"
 						aria-valuemax="100">
 						<div class="progress-bar bg-warning" style="width: 50%"></div>
@@ -152,16 +180,32 @@
 				</div>
 				<!------------------------------------>
 			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card"><img src="../../assets/sun.png" class="h-100" alt=""></div>
-			<div class="div col-2 course-type-card"><img src="../../assets/shield.png" class="h-75" alt=""></div>
-			<div class="div col-2 course-type-card course-type-card-none "></div>
+			<div id="carousel2" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+							<div class="div col-3 course-type-card"><img src="../../assets/sun.png" class="h-100" alt=""></div>
+							<div class="div col-3 course-type-card"><img src="../../assets/shield.png" class="h-75" alt=""></div>
+							<div class="div col-3 course-type-card course-type-card-none "></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
 			<!--- Одно направление --->
 			<div class="div col-3">
 				<!---------Название одного курса------->
 				<div class="container">
 					<p class="leaderboard-name profession-name">UX/Ui Designer</p>
-					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example" aria-valuenow="25"
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
 						aria-valuemin="0"
 						aria-valuemax="100">
 						<div class="progress-bar bg-success opacity-75" style="width: 75%"></div>
@@ -169,16 +213,32 @@
 				</div>
 				<!------------------------------------>
 			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
+			<div id="carousel3" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+													<div class="div col-3 course-type-card"><img src="../../assets/sun.png" class="h-100" alt=""></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
 			<!--- Одно направление --->
 			<div class="div col-3">
 				<!---------Название одного курса------->
 				<div class="container">
 					<p class="leaderboard-name profession-name">Backend</p>
-					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example" aria-valuenow="25"
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
 						aria-valuemin="0"
 						aria-valuemax="100">
 						<div class="progress-bar bg-success" style="width: 100%"></div>
@@ -186,10 +246,26 @@
 				</div>
 				<!------------------------------------>
 			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card"><img src="../../assets/sun.png" class="h-100" alt=""></div>
-			<div class="div col-2 course-type-card"><img src="../../assets/shield.png" class="h-75" alt=""></div>
-			<div class="div col-2 course-type-card course-type-card-none "></div>
+			<div id="carousel4" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+													<div class="div col-3 course-type-card"><img src="../../assets/sun.png" class="h-100" alt=""></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
 			<!---------------------------------->
 		</div>
 	</div>
