@@ -415,3 +415,32 @@ body::-webkit-scrollbar {
 #competency-matrix::-webkit-scrollbar {
   display: none
 }
+
+#statistics {
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 1px lightgray;
+  margin: 10px 0 0;
+  height: 750px;
+  overflow-y: scroll;
+}
+
+#statistics::-webkit-scrollbar {
+  display: none;
+}
+
+.statistic-courses-row {
+  display: flex;
+  gap: 50px;
+  margin-left: 100px;
+  justify-content: center;
+  height: 240px;
+}
+
+.statistic-card {
+  width: 350px;
+  border-radius: 25px;
+  padding: 0;
+  margin: 10px 0;
+  box-shadow: 0 2px 2px 2px lightgray;
+}
+
