@@ -448,3 +448,7 @@ body::-webkit-scrollbar {
   margin: 10px 0;
   box-shadow: 0 2px 2px 2px lightgray;
 }
+
+.profile-dropdown {
+  width: fit-content;
+}
