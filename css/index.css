@@ -452,3 +452,20 @@ body::-webkit-scrollbar {
 .profile-dropdown {
   width: fit-content;
 }
+
+#course-create-input-container {
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 1px lightgray;
+  margin: 10px 0 0;
+  height: 700px;
+}
+
+.course-create-input-textarea {
+  max-height: 150px;
+}
+
+#course-create- {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}

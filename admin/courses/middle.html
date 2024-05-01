@@ -115,39 +115,48 @@
 				Добавить</strong></button>
 		</div>
 		<!-- Modal -->
-		<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый курс?</h3></div>
-					<div class="container course-radio-buttons justify-content-between d-flex">
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-							<label class="form-check-label" for="inlineRadio1">Trainee</label>
+		<form id="type-radio">
+			<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-							<label class="form-check-label" for="inlineRadio2">Junior</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-							<label class="form-check-label" for="inlineRadio3">Middle</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-							<label class="form-check-label" for="inlineRadio4">Senior</label>
-						</div>
-					</div>
-					<div class="modal-footer mt-3" style="display:flex; justify-content: space-evenly">
-						<button type="button" class="btn btn-success" style="width: 160px">Добавить</button>
-						<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена</button>
+						<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый курс?</h3></div>
+						<fieldset>
+							<div class="container course-radio-buttons justify-content-between d-flex">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+										value="1">
+									<label class="form-check-label" for="inlineRadio1">Trainee</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+										value="2">
+									<label class="form-check-label" for="inlineRadio2">Junior</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+										value="3">
+									<label class="form-check-label" for="inlineRadio3">Middle</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+										value="4">
+									<label class="form-check-label" for="inlineRadio4">Senior</label>
+								</div>
+							</div>
+							<div class="modal-footer mt-3" style="display:flex; justify-content: space-evenly">
+								<button type="submit" class="btn btn-success" style="width: 160px">Добавить</button>
+								<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена
+								</button>
+							</div>
+						</fieldset>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-----button ----->
+		</form>
 		<div id="filter" class="container mt-2">
 			<a href="trainee.html" class="btn level-button btn-outline-success">Trainee</a>
 			<a href="junior.html" class="btn level-button btn-outline-success">Junior</a>
@@ -196,5 +205,6 @@
 </main>
 <!--Main layout-->
 <script src="../../js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
