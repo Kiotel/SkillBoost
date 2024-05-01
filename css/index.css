@@ -1,3 +1,8 @@
+.competency-carousel-inner {
+  padding: 0 10px;
+  margin-left: 120px;
+}
+
 body {
   background-color: #fbfbfb;
 }
@@ -443,4 +448,3 @@ body::-webkit-scrollbar {
   margin: 10px 0;
   box-shadow: 0 2px 2px 2px lightgray;
 }
-
