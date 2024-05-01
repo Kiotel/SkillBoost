@@ -14,7 +14,7 @@
 	<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
 		<div class="position-sticky">
 			<div class="list-group-item list-hr list-group-flush mx-3 mt-4">
-				<a href="/" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
+				<a href="#" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
 					<i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="tab-text">Главная</span>
 				</a>
 				<div class="dropdown">
@@ -49,7 +49,7 @@
 				</div>
 				<a href="#" class="list-group-item  list-group-item-action py-2 ripple"
 				><i class="fas fa-lock fa-fw me-3"></i><span class="tab-text">Результаты</span></a>
-				<a href="admin/incentiveSystem.html" class="list-group-item list-group-item-action py-2 ripple">
+				<a href="#" class="list-group-item list-group-item-action py-2 ripple">
 					<i class="fas fa-chart-pie fa-fw me-3"></i><span class="tab-text">Система поощрения</span>
 				</a>
 				<a href="#" class="list-group-item list-group-item-action py-2 ripple"
@@ -88,7 +88,8 @@
 
 			<!-- Right links -->
 			<div class="dropdown">
-				<button class="circle dropdown-toggle" data-bs-toggle="dropdown"><img id="user-icon" src="assets/person.svg"
+				<button class="circle dropdown-toggle" data-bs-toggle="dropdown"><img id="user-icon"
+					src="../../assets/person.svg"
 					alt="user-icon"></button>
 				<ul class="dropdown-menu dropdown-menu-end">
 					<li><a class="dropdown-item" href="#">Профиль</a></li>
@@ -107,12 +108,71 @@
 <body>
 <!--Main layout-->
 <main style="margin-top: 0; display: flex; justify-content: end">
-	<div id="main-container" class="container container-fluid pt-3 ">
-		<div id="sub-nav-buttons-container" class="container">
-			<a href="statistics.html" class="sub-nav-button active-tab"><h2>Статистика</h2></a>
-			<a href="leaderboard/trainee.html" class="sub-nav-button"><h2 class="text-black-50">Таблица лидеров</h2></a>
+	<div id="main-container" class="container container-fluid pt-3 leaderboard-container">
+		<!--- add button ---->
+		<div id="sub-nav-buttons-container" class="container  create-button-container">
+			<button class="btn btn-success btn-create" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>+
+				Добавить</strong></button>
 		</div>
-		<div id="users" class="row text-center">
+		<!-- Modal -->
+		<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый тест?</h3></div>
+					<div class="modal-footer" style="display:flex; justify-content: space-evenly">
+						<button type="button" class="btn btn-success" style="width: 160px">Добавить</button>
+						<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!----- ----->
+		<div id="filter" class="container mt-2">
+			<a href="trainee.html" class="btn level-button btn-outline-success">Trainee</a>
+			<a href="junior.html" class="btn level-button btn-outline-success">Junior</a>
+			<a href="middle.html" class="btn level-button btn-outline-success active text-decoration-none">Middle</a>
+			<a href="senior.html" class="btn level-button btn-outline-success">Senior</a>
+		</div>
+		<div id="courses" class="row text-center mt-4">
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<div class="container"><p class="leaderboard-name profession-name">FrontEnd</p></div>
+			</div>
+			<div class="col-1"></div>
+			<div class="div col-2 course-type-card"><p class="course-card-text">SEO</p></div>
+			<div class="div col-2 course-type-card"><p class="course-card-text">Подготовка верстки для систем управления контентом</p></div>
+			<div class="div col-2 course-type-card"><p class="course-card-text">Софтскиллы для разработчиков</p></div>
+			<!-------->
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<div class="container"><p class="leaderboard-name profession-name">Backend</p></div>
+			</div>
+			<div class="col-1"></div>
+			<div class="div col-2 course-type-card course-type-card-none "></div>
+			<div class="div col-2 course-type-card course-type-card-none "></div>
+			<div class="div col-2 course-type-card course-type-card-none "></div>
+			<!-------->
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<div class="container"><p class="leaderboard-name profession-name">UX/UI Designer</p></div>
+			</div>
+			<div class="col-1"></div>
+			<div class="div col-2 course-type-card course-type-card-none"></div>
+			<div class="div col-2 course-type-card course-type-card-none"></div>
+			<div class="div col-2 course-type-card course-type-card-none"></div>
+			<!-------->
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<div class="container"><p class="leaderboard-name profession-name">Analyst</p></div>
+			</div>
+			<div class="col-1"></div>
+			<div class="div col-2 course-type-card course-type-card-none"></div>
+			<div class="div col-2 course-type-card course-type-card-none"></div>
+			<div class="div col-2 course-type-card course-type-card-none"></div>
+			<!-------->
 		</div>
 	</div>
 </main>
