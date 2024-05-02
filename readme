@@ -3,3 +3,27 @@
 Работает исключительно при fullHd
 
 Можно переходить от пользователя к админу и наоборот через иконку сверху справа
+
+<div class="container d-flex justify-content-center w-100" style="gap: 20px; padding: 10px">
+								<!------- книга ------->
+								<div class="card col-3 item-card">
+									<img src="../assets/hudi.png" alt="Картинка товара">
+									<div class="card-body"><h3>ES6 и не только2</h3></div>
+								</div>
+								<!------- книга ------->
+								<div class="card col-3 item-card">
+									<img src="../assets/hudi.png" alt="Картинка товара">
+									<div class="card-body"><h3>ES6 и не только2</h3></div>
+								</div>
+								<!------- книга ------->
+								<div class="card col-3 item-card">
+									<img src="../assets/hudi.png" alt="Картинка товара">
+									<div class="card-body"><h3>ES6 и не только2</h3></div>
+								</div>
+								<!------- книга -------><!------- книга ------->
+								<div class="card col-3 item-card">
+									<img src="../assets/hudi.png" alt="Картинка товара">
+									<div class="card-body"><h3>ES6 и не только2</h3></div>
+								</div>
+								<!------- книга ------->
+							</div>

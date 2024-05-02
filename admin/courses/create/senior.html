@@ -90,14 +90,14 @@
 			<!-- Right links -->
 			<div class="dropdown">
 				<button class="circle dropdown-toggle" data-bs-toggle="dropdown"><img id="user-icon"
-					src="../../assets/person.svg"
+					src="../../../assets/person.svg"
 					alt="user-icon"></button>
 				<ul class="dropdown-menu dropdown-menu-end profile-dropdown">
 					<li><a class="dropdown-item" href="#">Профиль</a></li>
 					<li><a class="dropdown-item" href="#">Настройки</a></li>
 					<li><a class="dropdown-item" href="#">Помощь</a></li>
 					<li><a class="dropdown-item" href="#">Выход</a></li>
-					<li><a class="dropdown-item" href="../../user/statistics.html">Зайти как пользователь</a></li>
+					<li><a class="dropdown-item" href="../../../user/statistics.html">Зайти как пользователь</a></li>
 				</ul>
 			</div>
 		</div>
@@ -111,90 +111,54 @@
 <!--Main layout-->
 <main style="margin-top: 0; display: flex; justify-content: end">
 	<div id="main-container" class="container container-fluid pt-3 leaderboard-container">
-		<!--- add button ---->
-		<div id="sub-nav-buttons-container" class="container  create-button-container">
-			<button class="btn btn-success btn-create" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>+
-				Добавить</strong></button>
-		</div>
-		<!-- Modal -->
-		<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый курс?</h3></div>
-					<div class="container course-radio-buttons justify-content-between d-flex">
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-							<label class="form-check-label" for="inlineRadio1">Trainee</label>
+		<form id="course-create-form" action="">
+			<!--- add button ---->
+			<div id="sub-nav-buttons-container" class="container  create-button-container">
+				<button class="btn btn-success btn-create" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>+
+					Добавить</strong></button>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade mt-2" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-							<label class="form-check-label" for="inlineRadio2">Junior</label>
+						<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый курс?</h3></div>
+						<div class="modal-footer mt-3" style="display:flex; justify-content: space-evenly">
+							<button type="submit" class="btn btn-success" style="width: 160px">Добавить</button>
+							<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена
+							</button>
 						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-							<label class="form-check-label" for="inlineRadio3">Middle</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-							<label class="form-check-label" for="inlineRadio4">Senior</label>
-						</div>
-					</div>
-					<div class="modal-footer mt-3" style="display:flex; justify-content: space-evenly">
-						<button type="button" class="btn btn-success" style="width: 160px">Добавить</button>
-						<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена</button>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-----button ----->
-		<div id="filter" class="container mt-2">
-			<a href="trainee.html" class="btn level-button btn-outline-success">Trainee</a>
-			<a href="junior.html" class="btn level-button btn-outline-success active text-decoration-none">Junior</a>
-			<a href="middle.html" class="btn level-button btn-outline-success">Middle</a>
-			<a href="senior.html" class="btn level-button btn-outline-success">Senior</a>
-		</div>
-		<div id="courses" class="row text-center mt-4">
-			<!--- Одно направление --->
-			<div class="div col-3">
-				<div class="container"><p class="leaderboard-name profession-name">FrontEnd</p></div>
+			<!-----button ----->
+
+			<div id="course-create-input-container" class="text-center mt-4">
+				<label for="section-name" class="course-create-label"><h3> Название раздела</h3></label>
+				<select class="form-select course-create-input-dropdown" id="section-name"
+					aria-label="Floating label select example">
+					<option selected value="FrontEnd">FrontEnd</option>
+					<option value="BackEnd">BackEnd</option>
+					<option value="UX/UI Designer">UX/UI Designer</option>
+					<option value="Analyst">Analyst</option>
+				</select>
+				<label for="course-name-input" class="course-create-label"><h3> Выберите курс</h3></label>
+				<input id="course-name-input" class="form-control" type="text" placeholder="Название курса"
+					aria-label="default input example">
+				<label class="course-create-label" for="floatingTextarea2"><h3>Вопрос</h3></label>
+				<div>
+					<input class="form-control" type="file" id="formFile">
+				</div>
+				<div class="form-control-plaintextl">
+					<textarea class="form-control course-create-input-textarea"
+						placeholder="Добавить текст" id="floatingTextarea2"></textarea>
+				</div>
 			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card"><p class="course-card-text">SEO</p></div>
-			<div class="div col-2 course-type-card"><p class="course-card-text">Подготовка верстки для систем управления
-				контентом</p></div>
-			<div class="div col-2 course-type-card"><p class="course-card-text">Софтскиллы для разработчиков</p></div>
-			<!-------->
-			<!--- Одно направление --->
-			<div class="div col-3">
-				<div class="container"><p class="leaderboard-name profession-name">Backend</p></div>
-			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card course-type-card-none "></div>
-			<div class="div col-2 course-type-card course-type-card-none "></div>
-			<div class="div col-2 course-type-card course-type-card-none "></div>
-			<!-------->
-			<!--- Одно направление --->
-			<div class="div col-3">
-				<div class="container"><p class="leaderboard-name profession-name">UX/UI Designer</p></div>
-			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<!-------->
-			<!--- Одно направление --->
-			<div class="div col-3">
-				<div class="container"><p class="leaderboard-name profession-name">Analyst</p></div>
-			</div>
-			<div class="col-1"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<div class="div col-2 course-type-card course-type-card-none"></div>
-			<!-------->
-		</div>
+		</form>
+
 	</div>
 </main>
 <!--Main layout-->

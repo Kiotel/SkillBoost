@@ -111,31 +111,33 @@
 <!--Main layout-->
 <main style="margin-top: 0; display: flex; justify-content: end">
 	<div id="main-container" class="container container-fluid pt-3 leaderboard-container">
-		<!--- add button ---->
-		<div id="sub-nav-buttons-container" class="container  create-button-container">
-			<button class="btn btn-success btn-create" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>+
-				Добавить</strong></button>
-		</div>
-		<!-- Modal -->
-		<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый курс?</h3></div>
-					<div class="modal-footer mt-3" style="display:flex; justify-content: space-evenly">
-						<button type="button" class="btn btn-success" style="width: 160px">Добавить</button>
-						<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена</button>
+		<form id="course-create-form" action="">
+			<!--- add button ---->
+			<div id="sub-nav-buttons-container" class="container  create-button-container">
+				<button class="btn btn-success btn-create" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>+
+					Добавить</strong></button>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade mt-2" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый курс?</h3></div>
+						<div class="modal-footer mt-3" style="display:flex; justify-content: space-evenly">
+							<button type="submit" class="btn btn-success" style="width: 160px">Добавить</button>
+							<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-----button ----->
+			<!-----button ----->
 
-		<div id="course-create-input-container" class="row text-center mt-4">
-			<form id="course-create-form" action="">
-				<label for="section-name" class="mt-5"><h3> Название раздела</h3></label>
+			<div id="course-create-input-container" class="text-center mt-4">
+				<label for="section-name" class="course-create-label"><h3> Название раздела</h3></label>
 				<select class="form-select course-create-input-dropdown" id="section-name"
 					aria-label="Floating label select example">
 					<option selected value="FrontEnd">FrontEnd</option>
@@ -143,17 +145,19 @@
 					<option value="UX/UI Designer">UX/UI Designer</option>
 					<option value="Analyst">Analyst</option>
 				</select>
-				<label for="course-name-input" class="mt-5"><h3> Выберите курс</h3></label>
+				<label for="course-name-input" class="course-create-label"><h3> Выберите курс</h3></label>
 				<input id="course-name-input" class="form-control" type="text" placeholder="Название курса"
 					aria-label="default input example">
-				<div class="form-control-plaintextl mt-5">
-					<label for="floatingTextarea2"><h3>Вопрос</h3></label>
-					<textarea class="form-control mt-2 course-create-input-textarea"
-					placeholder="" id="floatingTextarea2"
-					style="height: 100px"></textarea>
+				<label class="course-create-label" for="floatingTextarea2"><h3>Вопрос</h3></label>
+				<div>
+					<input class="form-control" type="file" id="formFile">
 				</div>
-			</form>
-		</div>
+				<div class="form-control-plaintextl">
+					<textarea class="form-control course-create-input-textarea"
+						placeholder="Добавить текст" id="floatingTextarea2"></textarea>
+				</div>
+			</div>
+		</form>
 
 	</div>
 </main>

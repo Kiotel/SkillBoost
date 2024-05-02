@@ -42,6 +42,14 @@ body::-webkit-scrollbar {
   color: rgb(35, 35, 35);
 }
 
+.list-group-item + .list-group-item.active {
+  margin: 15px 0 0;
+  border-top-width: var(--bs-list-group-border-width);
+  color: rgb(35, 35, 35);
+  background-color: rgb(235, 235, 235);
+}
+
+
 .list-group-item.active {
   color: rgb(35, 35, 35);
   background-color: rgb(235, 235, 235);
@@ -454,18 +462,24 @@ body::-webkit-scrollbar {
 }
 
 #course-create-input-container {
+  padding: 0 20px;
   border-radius: 12px;
   box-shadow: 0 1px 3px 1px lightgray;
   margin: 10px 0 0;
-  height: 700px;
+  height: 750px;
 }
 
 .course-create-input-textarea {
-  max-height: 150px;
+  height: 400px;
+  max-height: 400px;
 }
 
 #course-create- {
   display: flex;
   justify-content: center;
   align-items: start;
+}
+
+.course-create-label {
+  margin-top: 25px;
 }
