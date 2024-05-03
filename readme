@@ -1,7 +1,10 @@
-Можно зайти через https://kiotel.github.io/SkillBoost/
-
 Работает исключительно при fullHd
 
 Можно переходить от пользователя к админу и наоборот через иконку сверху справа
 
-							
+github pages больше не работает
+
+Для запуска надо:
+1. NodeJS
+2. npm install
+3. npm run dev ИЛИ npm run build и npm run preview
