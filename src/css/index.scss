@@ -494,7 +494,7 @@ html::-webkit-scrollbar {
 
 $background-color: rgb(243, 242, 242);
 
-main {
+.profile-main {
   background-color: $background-color;
   height: calc(100vh - 82px);
 }
@@ -617,8 +617,22 @@ main {
   width: 100%;
 }
 
+.my-course-card {
+  padding: 20px;
+  background-color: white;
+  height: 250px;
+  border-radius: 30px;
+  box-shadow: 0 2px 2px 2px lightgrey;
+}
 
+.my-course-card-progress {
+  height: 25px;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
 
-
-
-
+.my-course-card-progress-bar {
+  background-color: $main-color;
+  border-radius: 25px;
+}
