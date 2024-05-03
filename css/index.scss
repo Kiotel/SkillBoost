@@ -9,7 +9,12 @@ body {
   background-color: #fbfbfb;
 }
 
-body::-webkit-scrollbar {
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+html::-webkit-scrollbar {
   display: none;
 }
 
