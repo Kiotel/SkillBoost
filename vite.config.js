@@ -2,7 +2,7 @@ import {defineConfig} from 'vite';
 import path from 'path';
 import fs from 'fs';
 
-// import {viteSingleFile} from 'vite-plugin-singlefile'; если вот прям нет nodejs
+// import {viteSingleFile} from 'vite-plugin-singlefile';
 function getHtmlEntryFiles(srcDir) {
 	const entry = {};
 
