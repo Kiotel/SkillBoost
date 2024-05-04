@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SkillBoost</title>
+
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/assets/main-CJphEdT_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-arxBAqfO.css">
+</head>
+<!--Main Navigation-->
+<header>
+	<!-- class active for active -->
+	<div id="SkillBoost"><h1>SkillBoost</h1></div>
+	<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+		<div class="position-sticky">
+			<div class="list-group-item list-hr list-group-flush mx-3 mt-4">
+				<a href="#" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
+					<i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="tab-text">Главная</span>
+				</a>
+				<div class="dropdown">
+					<a role="button" href="#" class="dropdown-toggle list-group-item list-group-item-action py-2 ripple"
+						data-bs-toggle="dropdown">
+						<i class="fas fa-chart-area fa-fw me-3"></i><span class="tab-text">Курсы</span></a>
+					<ul class="dropdown-menu">
+						<li><a class="tab-dropdown dropdown-item py-2" href="../courses/trainee.html">Trainee</a>
+						</li>
+						<li><a class="tab-dropdown dropdown-item py-2" href="../courses/junior.html">Junior</a>
+						</li>
+						<li><a class="tab-dropdown dropdown-item py-2" href="../courses/middle.html">Middle</a>
+						</li>
+						<li><a class="tab-dropdown dropdown-item py-2" href="../courses/senior.html">Senior</a>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<a role="button" href="#" class="dropdown-toggle list-group-item list-group-item-action py-2 ripple"
+						data-bs-toggle="dropdown">
+						<i class="fas fa-chart-area fa-fw me-3"></i><span class="tab-text">Тестовые задания</span></a>
+					<ul class="dropdown-menu">
+						<li><a class="tab-dropdown dropdown-item py-2" href="#">Trainee</a>
+						</li>
+						<li><a class="tab-dropdown dropdown-item py-2" href="#">Junior</a>
+						</li>
+						<li><a class="tab-dropdown dropdown-item py-2" href="#">Middle</a>
+						</li>
+						<li><a class="tab-dropdown dropdown-item py-2" href="#">Senior</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="list-group-item  list-group-item-action py-2 ripple"
+				><i class="fas fa-lock fa-fw me-3"></i><span class="tab-text">Результаты</span></a>
+				<a href="#" class="list-group-item list-group-item-action py-2 ripple">
+					<i class="fas fa-chart-pie fa-fw me-3"></i><span class="tab-text">Система поощрения</span>
+				</a>
+				<a href="../library.html" class="list-group-item list-group-item-action py-2 ripple"
+				><i class="fas fa-chart-bar fa-fw me-3"></i><span class="tab-text">Библиотека</span></a
+				>
+				<a href="../create-account.html" class="list-group-item list-group-item-action py-2 ripple"
+				><i class="fas fa-globe fa-fw me-3"></i><span class="tab-text">Создание аккаунтов</span></a
+				>
+			</div>
+		</div>
+	</nav>
+	<!-- Sidebar -->
+
+	<!-- Navbar -->
+	<nav id="main-navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+		<!-- Container wrapper -->
+		<div class="container-fluid">
+			<!-- Toggle button -->
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-mdb-collapse-init
+				data-mdb-target="#sidebarMenu"
+				aria-controls="sidebarMenu"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<i class="fas fa-bars"></i>
+			</button>
+			<!-- Название вкладки-->
+			<a class="ms-5 navbar-brand" href="#">
+				<h2 class="text-white">
+					Главная
+				</h2>
+			</a>
+
+			<!-- Right links -->
+			<div class="dropdown">
+				<button class="circle dropdown-toggle" data-bs-toggle="dropdown"><img id="user-icon" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%208a3%203%200%201%200%200-6%203%203%200%200%200%200%206m2-3a2%202%200%201%201-4%200%202%202%200%200%201%204%200m4%208c0%201-1%201-1%201H3s-1%200-1-1%201-4%206-4%206%203%206%204m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516%2010.68%2010.289%2010%208%2010s-3.516.68-4.168%201.332c-.678.678-.83%201.418-.832%201.664z'/%3e%3c/svg%3e"
+					alt="user-icon"></button>
+				<ul class="dropdown-menu dropdown-menu-end profile-dropdown">
+					<li><a class="dropdown-item" href="../personal-account/profile.html">Профиль</a></li>
+					<li><a class="dropdown-item" href="#">Настройки</a></li>
+					<li><a class="dropdown-item" href="#">Помощь</a></li>
+					<li><a class="dropdown-item" href="#">Выход</a></li>
+					<li><a class="dropdown-item" href="../../index.html">Зайти как админ</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Container wrapper -->
+	</nav>
+	<!-- Navbar -->
+</header>
+<!--Main Navigation-->
+
+<body>
+<!--Main layout-->
+<main style="margin-top: 0; display: flex; justify-content: end">
+	<div id="main-container" class="container container-fluid pt-3 leaderboard-container">
+		<div id="sub-nav-buttons-container" class="container">
+			<a href="../statistics.html" class="sub-nav-button"><h2 class="text-black-50">Статистика</h2></a>
+			<a href="trainee.html" class="sub-nav-button active-tab"><h2>Карта компетенций</h2></a>
+		</div>
+		<div id="filter" class="container mt-2">
+			<a href="trainee.html" class="btn level-button btn-outline-success">Trainee</a>
+			<a href="junior.html" class="btn level-button btn-outline-success">Junior</a>
+			<a href="middle.html" class="btn level-button btn-outline-success active text-decoration-none">Middle</a>
+			<a href="senior.html" class="btn level-button btn-outline-success">Senior</a>
+		</div>
+		<div id="competency-matrix" class="row text-center mt-4">
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<!---------Название одного курса------->
+				<div class="container">
+					<p class="profile-leaderboard-name profession-name">FrontEnd</p>
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
+						aria-valuemin="0"
+						aria-valuemax="100">
+						<div class="progress-bar bg-danger" style="width: 25%"></div>
+					</div>
+				</div>
+				<!------------------------------------>
+			</div>
+			<!---- Это катается на каруселях -------->
+			<!---- Я считаю это победа --------->
+			<div id="carousel1" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+													<div class="div col-3 course-type-card"><img src="/assets/sun-CeWuPX_M.png" class="h-100" alt=""></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Подготовка верстки для систем управления
+								контентом</p></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Софтскиллы для разработчиков</p></div>
+						</div>
+					</div>
+					<div class="carousel-item"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+							<div class="course-type-card col-3"><p class="course-card-text">SEO2</p></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Подготовка верстки для систем управления2
+								контентом</p></div>
+							<div class="course-type-card col-3"><p class="course-card-text">Софтскиллы для разработчиков2</p></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!--------------------------------------->
+
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<!---------Название одного курса------->
+				<div class="container">
+					<p class="profile-leaderboard-name profession-name">Backend</p>
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
+						aria-valuemin="0"
+						aria-valuemax="100">
+						<div class="progress-bar bg-warning" style="width: 50%"></div>
+					</div>
+				</div>
+				<!------------------------------------>
+			</div>
+			<div id="carousel2" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+							<div class="div col-3 course-type-card"><img src="/assets/sun-CeWuPX_M.png" class="h-100" alt=""></div>
+							<div class="div col-3 course-type-card"><img src="/assets/shield-Ck1yIcaR.png" class="h-75" alt=""></div>
+							<div class="div col-3 course-type-card course-type-card-none "></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<!---------Название одного курса------->
+				<div class="container">
+					<p class="profile-leaderboard-name profession-name">UX/Ui Designer</p>
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
+						aria-valuemin="0"
+						aria-valuemax="100">
+						<div class="progress-bar bg-success opacity-75" style="width: 75%"></div>
+					</div>
+				</div>
+				<!------------------------------------>
+			</div>
+			<div id="carousel3" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+													<div class="div col-3 course-type-card"><img src="/assets/sun-CeWuPX_M.png" class="h-100" alt=""></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!--- Одно направление --->
+			<div class="div col-3">
+				<!---------Название одного курса------->
+				<div class="container">
+					<p class="profile-leaderboard-name profession-name">Backend</p>
+					<div class="progress" style="width: 350px; height: 7px" role="progressbar" aria-label="Success example"
+						aria-valuenow="25"
+						aria-valuemin="0"
+						aria-valuemax="100">
+						<div class="progress-bar bg-success" style="width: 100%"></div>
+					</div>
+				</div>
+				<!------------------------------------>
+			</div>
+			<div id="carousel4" class="carousel slide carousel-dark col-9">
+				<div class="carousel-inner competency-carousel-inner">
+					<div class="carousel-item active"> <!------ не может флексить(((( ----->
+						<div class="d-flex"> <!-----а это может 🤷‍♂️ ----->
+													<div class="div col-3 course-type-card"><img src="/assets/sun-CeWuPX_M.png" class="h-100" alt=""></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+							<div class="course-type-card course-type-card-none col-3"><p class="course-card-text"></p></div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!---------------------------------->
+		</div>
+	</div>
+</main>
+<!--Main layout-->
+</body>
+</html>

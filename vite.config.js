@@ -1,6 +1,7 @@
 import {defineConfig} from 'vite';
 import path from 'path';
 import fs from 'fs';
+
 // import {viteSingleFile} from 'vite-plugin-singlefile'; если вот прям нет nodejs
 function getHtmlEntryFiles(srcDir) {
 	const entry = {};
@@ -46,7 +47,7 @@ export default defineConfig({
 			'~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
 		},
 	},
-	//plugins     : [
-	//		viteSingleFile({ useRecommendedBuildConfig: false })
-	//],
+	plugins     : [
+		//		viteSingleFile({ useRecommendedBuildConfig: false })
+	],
 });

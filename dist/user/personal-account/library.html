@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SkillBoost</title>
+
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/assets/main-CJphEdT_.js"></script>
+  <script type="module" crossorigin src="/assets/library-CIP7-l5l.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-arxBAqfO.css">
+</head>
+<!--Main Navigation-->
+<header>
+	<!-- class active for active -->
+	<a class="text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
+		<div id="SB"><h1>SB</h1></div>
+	</a>
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<div class="container d-flex justify-content-center">
+				<p class="offcanvas-title" style="font-size: 60px" id="offcanvasExampleLabel">SB</p>
+			</div>
+		</div>
+		<div class="offcanvas-body">
+			<div class="container d-flex justify-content-center">
+				<div class="dropdown mt-3">
+					<div class="container d-flex justify-content-center ms-2">
+						<h2>
+							Личный кабинет
+						</h2>
+					</div>
+					<a class="btn sidebar-button d-flex justify-content-center " href="profile.html">Профиль</a>
+					<a class="btn sidebar-button d-flex justify-content-center active" href="library.html">Библиотека</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="competency-matrix.html">Карта компетенций</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="bonuses.html">Бонусы</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="leaderboard.html">Таблица лидеров</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="my-courses.html">Мои курсы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Navbar -->
+	<nav id="profile-main-navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+		<!-- Container wrapper -->
+		<div class="container-fluid d-flex justify-content-center">
+			<!-- Toggle button -->
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-mdb-collapse-init
+				data-mdb-target="#sidebarMenu"
+				aria-controls="sidebarMenu"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<i class="fas fa-bars"></i>
+			</button>
+			<!-- Название вкладки-->
+			<a class="ms-5 navbar-brand text-white" href="#" style="padding-right:180px">
+				<h1>
+					Личный кабинет -> Профиль
+				</h1>
+			</a>
+		</div>
+		<!-- Container wrapper -->
+	</nav>
+	<!-- Navbar -->
+</header>
+<!--Main Navigation-->
+<body>
+<!--Main layout-->
+<main class="profile-main" style="margin-top: 0; display: flex; justify-content: end">
+	<div id="profile-main-container" class="container container-fluid pt-3 leaderboard-container">
+		<div id="user-library" style="padding-top: 35px">
+			<div id="carousel1" class="carousel slide carousel-dark">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="d-block w-100">
+							<div class="container d-flex justify-content-center w-100" style="gap: 20px; padding-top: 10px">
+								<!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" active class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" active class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="d-block w-100">
+							<div class="container d-flex justify-content-center w-100" style="gap: 20px; padding-top: 10px">
+								<!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только2</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ESasdasdasdasdasdasd6 и не только2</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только2</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только2</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" style="width: 50px" type="button" data-bs-target="#carousel1"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" style="width: 50px" type="button" data-bs-target="#carousel1"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<div id="carousel2" class="carousel slide carousel-dark">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="d-block w-100">
+							<div class="container d-flex justify-content-center w-100" style="gap: 20px; padding-top: 10px">
+								<!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="d-block w-100">
+							<div class="container d-flex justify-content-center w-100" style="gap: 20px; padding-top: 10px">
+								<!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h6>ES6 и не только2</h6></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только2</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только2</h4></div>
+								</div><!------- книга ------->
+								<div class="card library-card col-3 item-card d-flex justify-content-center align-items-center">
+									<div class="d-flex justify-content-between align-items-start">
+										<img src="/assets/es6-book-DOJmQRV6.jpeg" height="288px" width="216px" alt="Картинка товара">
+										<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M70.715,0v512L256,326.715L441.285,512V0H70.715z%20M411.239,439.462L256,284.224L100.761,439.462V30.046h310.477V439.462z'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="bookmark" alt="">
+									</div>
+									<div class="card-body" style="padding-right: 45px"><h4>ES6 и не только2</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" style="width: 50px" type="button" data-bs-target="#carousel2"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" style="width: 50px" type="button" data-bs-target="#carousel2"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</main>
+<!--Main layout-->
+
+</body>
+</html>
