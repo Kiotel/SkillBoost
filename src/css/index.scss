@@ -712,3 +712,36 @@ $background-color: rgb(243, 242, 242);
   height: 60px;
   margin-top: 10px;
 }
+
+.edit-account-container {
+  font-size: 25px;
+}
+
+.edit-account-input {
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 1px 1px 1px lightgrey;
+}
+
+.change-password-input {
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 13px;
+}
+
+.change-password-button {
+  padding: 5px;
+  border-radius: 13px;
+  background-color: $main-color;
+  color: white;
+  width: 120px;
+}
+
+#personal-account-statistics {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#personal-account-statistics::-webkit-scrollbar {
+  display: none;
+}

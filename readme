@@ -7,4 +7,4 @@ github pages больше не работает
 Для запуска надо:
 1. иметь NodeJS
 2. в терминале ввести npm install
-3. и npm run dev ИЛИ npm run build и npm run preview
+3. npm run dev ИЛИ npm run build и npm run preview

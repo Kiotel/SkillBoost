@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SkillBoost</title>
+	<script type="module" src="../../main.js"></script>
+
+</head>
+<!--Main Navigation-->
+<header>
+	<!-- class active for active -->
+	<a class="text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
+		<div id="SB"><h1>SB</h1></div>
+	</a>
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<div class="container d-flex justify-content-center">
+				<p class="offcanvas-title" style="font-size: 60px" id="offcanvasExampleLabel">SB</p>
+			</div>
+		</div>
+		<div class="offcanvas-body">
+			<div class="container d-flex justify-content-center">
+				<div class="dropdown mt-3">
+					<div class="container d-flex justify-content-center ms-2">
+						<h2>
+							Личный кабинет
+						</h2>
+					</div>
+					<a class="btn sidebar-button d-flex justify-content-center" href="profile.html">Профиль</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="library.html">Библиотека</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="competency-matrix.html">Карта
+						компетенций</a>
+					<a class="btn sidebar-button d-flex justify-content-center active" href="bonuses.html">Бонусы</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="leaderboard.html">Таблица лидеров</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="my-courses.html">Мои курсы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Navbar -->
+	<nav id="profile-main-navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+		<!-- Container wrapper -->
+		<div class="container-fluid d-flex justify-content-center">
+			<!-- Toggle button -->
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-mdb-collapse-init
+				data-mdb-target="#sidebarMenu"
+				aria-controls="sidebarMenu"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<i class="fas fa-bars"></i>
+			</button>
+			<!-- Название вкладки-->
+			<a class="ms-5 navbar-brand text-white" href="#" style="padding-right:180px">
+				<h1>
+					Личный кабинет -> Бонусы
+				</h1>
+			</a>
+		</div>
+		<!-- Container wrapper -->
+	</nav>
+	<!-- Navbar -->
+</header>
+<!--Main Navigation-->
+
+<body>
+<!--Main layout-->
+<main class="profile-main" style="margin-top: 0; display: flex; justify-content: end">
+	<div id="profile-main-container" class="container container-fluid pt-3 d-flex flex-column">
+		<div class="container row" style="margin-right: 1000px; font-size: 22px">
+			<div><h1>Замыкания и объекты</h1></div>
+			<div class="col-4">
+				<div class="d-flex justify-content-between">
+				</div>
+				<div class="d-flex justify-content-center"><img src="../../assets/es6-book.jpeg" width="300" alt=""></div>
+			</div>
+			<div class="col-8">
+				<p>
+					;flkasdjf;lkdjds;lkfja;sdlfkja;slkdfja;slkjfmevlfjialsejmfvlk;laibrejgfm;srlkgjb;lksbrdgsrdgbsaroklgbjsa;rldkgbjsr
+					' ;aldskf
+					asdf;lk asjdf;asl kefj s;aelkf js;ealkfj a;sosiej ;LKEA F;OIASJE ;LFKJe oifjas;lkfj ;aeslifj; OIAJEF;L
+					KJASNED;FOUIH alfjiheals kjhf dlkskjfh alsuehf lasejhfl slkjdgrfh lkjsehL KJ hloaisdufgh lskdjrfhg ldksruh
+					lkjhdsflkgusdrh ghLEKJF HSALDIUOFH EASLIJHajb;lskfjab;elskfjba;elskfbja;eslkfbja;eslkbjfma;seifbojma;selkfbj
+					efbjaes,fb;lakjesfb;maleksjfb,;aoeksjf;</p>
+			</div>
+			<div class="d-flex justify-content-center" style="top: 800px; position: absolute">
+				<a href="library.html" class="btn btn-success"
+					style="border-radius: 20px; font-size: 20px; padding: 10px; width: 150px">Читать</a>
+				<button style="border: none" class="text-black-50" data-bs-toggle="modal"
+					data-bs-target="#exampleModal">Добавить в избранное
+				</button>
+				<!-- Modal -->
+				<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body d-flex justify-content-center">
+								Книга добавлена в избранное
+							</div>
+							<div class="modal-footer d-flex justify-content-center">
+								<a style="border-radius: 20px" type="button" href="bonuses.html"
+									class="btn libra  btn-success">Перейти</a>
+								<a style="border-radius: 20px" type="button"
+									href="book.html"
+									class="btn libra btn-secondary" data-bs-dismiss="modal">Отмена</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!--Main layout-->
+
+</body>
+</html>
