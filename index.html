@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SkillBoost</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/index.css">
-	<script src="js/bootstrap.bundle.min.js" defer></script>
+	<link rel="stylesheet" href="src/css/bootstrap.min.css">
+	<link rel="stylesheet" href="src/css/index.css">
+	<script src="src/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <!--Main Navigation-->
 <header>
@@ -19,17 +19,17 @@
 					<i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="tab-text">Главная</span>
 				</a>
 				<div class="dropdown">
-					<a role="button" href="admin/courses/trainee.html" class="dropdown-toggle list-group-item list-group-item-action py-2 ripple"
+					<a role="button" href="src/admin/courses/trainee.html" class="dropdown-toggle list-group-item list-group-item-action py-2 ripple"
 						data-bs-toggle="dropdown">
 						<i class="fas fa-chart-area fa-fw me-3"></i><span class="tab-text">Курсы</span></a>
 					<ul class="dropdown-menu">
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/courses/trainee.html">Trainee</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/courses/trainee.html">Trainee</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/courses/junior.html">Junior</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/courses/junior.html">Junior</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/courses/middle.html">Middle</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/courses/middle.html">Middle</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/courses/senior.html">Senior</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/courses/senior.html">Senior</a>
 						</li>
 					</ul>
 				</div>
@@ -38,23 +38,23 @@
 						data-bs-toggle="dropdown">
 						<i class="fas fa-chart-area fa-fw me-3"></i><span class="tab-text">Тестовые задания</span></a>
 					<ul class="dropdown-menu">
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/missions/trainee.html">Trainee</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/missions/trainee.html">Trainee</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/missions/junior.html">Junior</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/missions/junior.html">Junior</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/missions/middle.html">Middle</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/missions/middle.html">Middle</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="admin/missions/senior.html">Senior</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="src/admin/missions/senior.html">Senior</a>
 						</li>
 					</ul>
 				</div>
-				<a href="admin/incentive-system.html" class="list-group-item list-group-item-action py-2 ripple">
+				<a href="src/admin/incentive-system.html" class="list-group-item list-group-item-action py-2 ripple">
 					<i class="fas fa-chart-pie fa-fw me-3"></i><span class="tab-text">Система поощрения</span>
 				</a>
-				<a href="admin/library.html" class="list-group-item list-group-item-action py-2 ripple"
+				<a href="src/admin/library.html" class="list-group-item list-group-item-action py-2 ripple"
 				><i class="fas fa-chart-bar fa-fw me-3"></i><span class="tab-text">Библиотека</span></a
 				>
-				<a href="admin/accounts.html" class="list-group-item list-group-item-action py-2 ripple"
+				<a href="src/admin/accounts.html" class="list-group-item list-group-item-action py-2 ripple"
 				><i class="fas fa-globe fa-fw me-3"></i><span class="tab-text">Создание аккаунтов</span></a
 				>
 			</div>
@@ -87,14 +87,14 @@
 
 			<!-- Right links -->
 			<div class="dropdown">
-				<button class="circle dropdown-toggle" data-bs-toggle="dropdown"><img id="user-icon" src="assets/person.svg"
+				<button class="circle dropdown-toggle" data-bs-toggle="dropdown"><img id="user-icon" src="src/assets/person.svg"
 					alt="user-icon"></button>
 				<ul class="dropdown-menu dropdown-menu-end profile-dropdown">
-					<li><a class="dropdown-item" href="admin/personal-account/profile.html">Профиль</a></li>
+					<li><a class="dropdown-item" href="src/admin/personal-account/profile.html">Профиль</a></li>
 					<li><a class="dropdown-item" href="#">Настройки</a></li>
 					<li><a class="dropdown-item" href="#">Помощь</a></li>
 					<li><a class="dropdown-item" href="#">Выход</a></li>
-					<li><a class="dropdown-item" href="user/personal-account/profile.html">Зайти как пользователь</a></li>
+					<li><a class="dropdown-item" href="src/user/personal-account/profile.html">Зайти как пользователь</a></li>
 				</ul>
 			</div>
 		</div>
@@ -109,8 +109,8 @@
 <main style="margin-top: 0; display: flex; justify-content: end">
 	<div id="main-container" class="container container-fluid pt-3 ">
 		<div id="sub-nav-buttons-container" class="container">
-			<a href="admin/statistics.html" class="sub-nav-button active-tab"><h2>Статистика</h2></a>
-			<a href="admin/leaderboard/trainee.html" class="sub-nav-button"><h2 class="text-black-50">Таблица лидеров</h2></a>
+			<a href="src/admin/statistics.html" class="sub-nav-button active-tab"><h2>Статистика</h2></a>
+			<a href="src/admin/leaderboard/trainee.html" class="sub-nav-button"><h2 class="text-black-50">Таблица лидеров</h2></a>
 		</div>
 		<div class="form-control-plaintext" data-mdb-input-init>
 			<input type="search" id="search1" class="form-control" placeholder="Поиск" aria-label="Search"/>
