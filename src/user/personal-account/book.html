@@ -30,12 +30,11 @@
 						</h2>
 					</div>
 					<a class="btn sidebar-button d-flex justify-content-center" href="profile.html">Профиль</a>
-					<a class="btn sidebar-button d-flex justify-content-center" href="library.html">Библиотека</a>
-					<a class="btn sidebar-button d-flex justify-content-center" href="competency-matrix.html">Карта
+					<a class="btn sidebar-button d-flex justify-content-center active" href="library.html">Библиотека</a>
+					<a class="btn sidebar-button d-flex justify-content-center" href="competency-matrix-junior.html">Карта
 						компетенций</a>
-					<a class="btn sidebar-button d-flex justify-content-center active" href="bonuses.html">Бонусы</a>
+					<a class="btn sidebar-button d-flex justify-content-center " href="bonuses.html">Бонусы</a>
 					<a class="btn sidebar-button d-flex justify-content-center" href="leaderboard.html">Таблица лидеров</a>
-					<a class="btn sidebar-button d-flex justify-content-center" href="my-courses.html">Мои курсы</a>
 				</div>
 			</div>
 		</div>
@@ -46,20 +45,20 @@
 		<div class="container-fluid d-flex justify-content-center">
 			<!-- Toggle button -->
 			<button
-				class="navbar-toggler"
-				type="button"
-				data-mdb-collapse-init
-				data-mdb-target="#sidebarMenu"
-				aria-controls="sidebarMenu"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
+					class="navbar-toggler"
+					type="button"
+					data-mdb-collapse-init
+					data-mdb-target="#sidebarMenu"
+					aria-controls="sidebarMenu"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
 			>
 				<i class="fas fa-bars"></i>
 			</button>
 			<!-- Название вкладки-->
 			<a class="ms-5 navbar-brand text-white" href="#" style="padding-right:180px">
 				<h1>
-					Личный кабинет -> Бонусы
+					Личный кабинет -> Библиотека
 				</h1>
 			</a>
 		</div>
@@ -73,31 +72,31 @@
 <!--Main layout-->
 <main class="profile-main" style="margin-top: 0; display: flex; justify-content: end">
 	<div id="profile-main-container" class="container container-fluid pt-3 d-flex flex-column">
-		<div class="container row" style="margin-right: 1000px; font-size: 22px">
-			<div><h1>Замыкания и объекты</h1></div>
+		<div class="container row mt-5" style="margin-right: 1000px; font-size: 22px">
+			<div><h1>«Замыкания и объекты»</h1></div>
 			<div class="col-4">
 				<div class="d-flex justify-content-between">
 				</div>
-				<div class="d-flex justify-content-center"><img src="../../assets/es6-book.jpeg" width="300" alt=""></div>
+				<div class="d-flex justify-content-center"><img src="../../assets/book5.jpeg" width="300" alt=""></div>
 			</div>
 			<div class="col-8">
-				<p>
-					;flkasdjf;lkdjds;lkfja;sdlfkja;slkdfja;slkjfmevlfjialsejmfvlk;laibrejgfm;srlkgjb;lksbrdgsrdgbsaroklgbjsa;rldkgbjsr
-					' ;aldskf
-					asdf;lk asjdf;asl kefj s;aelkf js;ealkfj a;sosiej ;LKEA F;OIASJE ;LFKJe oifjas;lkfj ;aeslifj; OIAJEF;L
-					KJASNED;FOUIH alfjiheals kjhf dlkskjfh alsuehf lasejhfl slkjdgrfh lkjsehL KJ hloaisdufgh lskdjrfhg ldksruh
-					lkjhdsflkgusdrh ghLEKJF HSALDIUOFH EASLIJHajb;lskfjab;elskfjba;elskfbja;eslkfbja;eslkbjfma;seifbojma;selkfbj
-					efbjaes,fb;lakjesfb;maleksjfb,;aoeksjf;</p>
+				<p>Даже если у вас уже есть опыт работы с JavaScript, скорее всего, язык вы в полной мере не знаете. Особое внимание в этой книге уделяется новым функциям, появившимся в
+					Ecmascript 6 (ES6) — последней версии стандарта JavaScript.
+				</p>
+				<p> ES6 повествует о тонкостях языка, малознакомых большинству работающих на JavaScript программистов. Вооружившись этими знаниями, вы достигнете подлинного мастерства;
+					выучите новый синтаксис; научитесь корректно использовать итераторы, генераторы, модули и классы; сможете более эффективно работать с данными; познакомитесь с новыми API,
+					например Array, Object, Math, Number и String; расширите функционал программ с помощью мета-программирования.
+				</p>
 			</div>
 			<div class="d-flex justify-content-center" style="top: 800px; position: absolute">
 				<a href="library.html" class="btn btn-success"
-					style="border-radius: 20px; font-size: 20px; padding: 10px; width: 150px">Читать</a>
+						style="border-radius: 20px; font-size: 20px; padding: 10px; width: 150px">Читать</a>
 				<button style="border: none" class="text-black-50" data-bs-toggle="modal"
-					data-bs-target="#exampleModal">Добавить в избранное
+						data-bs-target="#exampleModal">Добавить в избранное
 				</button>
 				<!-- Modal -->
 				<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-					aria-hidden="true">
+						aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-body d-flex justify-content-center">
@@ -105,10 +104,10 @@
 							</div>
 							<div class="modal-footer d-flex justify-content-center">
 								<a style="border-radius: 20px" type="button" href="bonuses.html"
-									class="btn libra  btn-success">Перейти</a>
+										class="btn libra  btn-success">Перейти</a>
 								<a style="border-radius: 20px" type="button"
-									href="book.html"
-									class="btn libra btn-secondary" data-bs-dismiss="modal">Отмена</a>
+										href="book.html"
+										class="btn libra btn-secondary" data-bs-dismiss="modal">Отмена</a>
 							</div>
 						</div>
 					</div>

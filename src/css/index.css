@@ -1,3 +1,6 @@
+/* для лого */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sora:wght@100..800&display=swap');
+
 .competency-carousel-inner {
   padding: 0 10px;
   margin-left: 120px;
@@ -10,6 +13,7 @@ body {
 html {
   height: 100vh;
   overflow: hidden;
+
 }
 
 html::-webkit-scrollbar {
@@ -104,13 +108,16 @@ html::-webkit-scrollbar {
 }
 
 #SkillBoost {
+  font-family: 'Sora', 'sans-serif';
+  font-weight: 600;
+  font-size: 50px;
+  color: #fff;
   display: flex;
   width: 360px;
   height: 82px;
   background-color: rgb(28, 84, 55);
   justify-content: center;
   align-items: center;
-  color: white;
   border-right: solid 2px white;
 }
 
@@ -253,6 +260,7 @@ html::-webkit-scrollbar {
   margin: 10px 0 0;
   max-height: 712px;
   overflow-y: scroll;
+  overflow-x: hidden;
   box-shadow: 0 1px 3px 1px lightgray;
 }
 
@@ -415,6 +423,8 @@ html::-webkit-scrollbar {
   margin-right: 30px;
   margin-bottom: 5px;
   height: 160px;
+  text-decoration: none;
+  color: black;
 }
 
 .course-type-card-none {
@@ -581,7 +591,6 @@ html::-webkit-scrollbar {
 
 
 .bookmark[active] {
-  // возможна ложная подсветка ошибки
   content: url("../assets/bookmark-active.svg");
 }
 
@@ -740,4 +749,27 @@ html::-webkit-scrollbar {
 
 #personal-account-statistics::-webkit-scrollbar {
   display: none;
+}
+
+.assign-course-text {
+  font-weight: 400;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.assign-course-checkbox {
+  width: 40px;
+  height: 40px;
+}
+
+.progress-bar-value {
+  text-align: end;
+  font-weight: 500;
+  font-size: 15px;
+  color: #bbb;
+}
+
+.bonuses-item-images {
+  border-radius: 20px;
+  background: #fff;
 }
