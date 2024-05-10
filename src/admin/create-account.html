@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/index.css">
 	<script src="../js/bootstrap.bundle.min.js" defer></script>
 	<title>SkillBoost</title>
@@ -121,7 +121,8 @@
 					<div class="modal-header">
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить нового пользователя?</h3></div>
+					<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить нового пользователя?</h3>
+					</div>
 					<div class="modal-footer" style="display:flex; justify-content: space-evenly">
 						<a href="accounts.html" type="button" class="btn btn-success" style="width: 160px">Добавить</a>
 						<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена</button>
@@ -133,32 +134,32 @@
 		<div id="users" class="row text-center" style="overflow: hidden; height: calc(100vh)">
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="surname" class="form-label align-self-start ps-2 edit-account-label">Фамилия</label>
-				<input type="text" class="form-control edit-account-input"  id="surname">
+				<input type="text" class="form-control edit-account-input" id="surname">
 			</div>
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="name" class="form-label align-self-start ps-2 edit-account-label">Имя</label>
-				<input type="text" class="form-control edit-account-input"  id="name">
+				<input type="text" class="form-control edit-account-input" id="name">
 			</div>
 			<div class="mb0-3 col-4 d-flex flex-column edit-account-container">
 				<label for="middle-name" class="form-label align-self-start ps-2 edit-account-label">Отчество</label>
-				<input type="text" class="form-control edit-account-input"  id="middle-name">
+				<input type="text" class="form-control edit-account-input" id="middle-name">
 			</div>
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="birth-date" class="form-label align-self-start ps-2 edit-account-label">Дата рождения</label>
 				<!----дата в формате гггг-мм-дд ------>
-				<input type="date" class="form-control edit-account-input"  id="birth-date">
+				<input type="date" class="form-control edit-account-input" id="birth-date">
 			</div>
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="city" class="form-label align-self-start ps-2 edit-account-label">Город</label>
-				<input type="text" class="form-control edit-account-input"  id="city">
+				<input type="text" class="form-control edit-account-input" id="city">
 			</div>
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="phone" class="form-label align-self-start ps-2 edit-account-label">Телефон</label>
-				<input type="text" class="form-control edit-account-input"  id="phone">
+				<input type="text" class="form-control edit-account-input" id="phone">
 			</div>
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="company" class="form-label align-self-start ps-2 edit-account-label">Компания</label>
-				<input type="text" class="form-control edit-account-input"  id="company">
+				<input type="text" class="form-control edit-account-input" id="company">
 			</div>
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="start-date" class="form-label align-self-start ps-2 edit-account-label">Дата начала работы</label>
@@ -166,19 +167,19 @@
 			</div>
 			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
 				<label for="email" class="form-label align-self-start ps-2 edit-account-label">Электронная почта</label>
-				<input type="email" class="form-control edit-account-input"  id="email">
+				<input type="email" class="form-control edit-account-input" id="email">
 			</div>
-			<div class="col-12 pt-4 ps-5 pe-5 d-flex flex-column">
-				<h2 class="align-self-start">Прогресс</h2>
-				<div class="container d-flex justify-content-center pb-0 pt-2" style="gap: 1320px">
-					<p style="font-size: 20px">Middle</p>
-					<p style="font-size: 20px">Senior</p>
-				</div>
-				<div class="progress" style="height: 25px" role="progressbar" aria-label="Basic example" aria-valuenow="0"
-					aria-valuemin="0"
-					aria-valuemax="100">
-					<div class="progress-bar progress-bar-striped bg-success" style="width: 50%"></div>
-				</div>
+			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
+				<label for="position" class="form-label align-self-start ps-2 edit-account-label">Должность</label>
+				<input type="text" class="form-control edit-account-input" id="position">
+			</div>
+			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
+				<label for="profile" class="form-label align-self-start ps-2 edit-account-label">Профиль</label>
+				<input type="text" class="form-control edit-account-input" id="profile">
+			</div>
+			<div class="mb-3 col-4 d-flex flex-column edit-account-container">
+				<label for="level" class="form-label align-self-start ps-2 edit-account-label">Уровень</label>
+				<input type="text" class="form-control edit-account-input" id="level">
 			</div>
 		</div>
 	</div>
