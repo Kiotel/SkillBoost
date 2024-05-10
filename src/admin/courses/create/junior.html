@@ -40,13 +40,13 @@
 						data-bs-toggle="dropdown">
 						<i class="fas fa-chart-area fa-fw me-3"></i><span class="tab-text">Тестовые задания</span></a>
 					<ul class="dropdown-menu">
-						<li><a class="tab-dropdown dropdown-item py-2" href="../../../../admin/missions/trainee.html">Trainee</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="../../../admin/missions/trainee.html">Trainee</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="../../../../admin/missions/junior.html">Junior</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="../../../admin/missions/junior.html">Junior</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="../../../../admin/missions/middle.html">Middle</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="../../../admin/missions/middle.html">Middle</a>
 						</li>
-						<li><a class="tab-dropdown dropdown-item py-2" href="../../../../admin/missions/senior.html">Senior</a>
+						<li><a class="tab-dropdown dropdown-item py-2" href="../../../admin/missions/senior.html">Senior</a>
 						</li>
 					</ul>
 				</div>
@@ -112,29 +112,12 @@
 <!--Main layout-->
 <main style="margin-top: 0; display: flex; justify-content: end">
 	<div id="main-container" class="container container-fluid pt-3 leaderboard-container">
-		<form id="course-create-form" action="">
+		<form id="course-create-form" action="assign-course.html">
 			<!--- add button ---->
 			<div id="sub-nav-buttons-container" class="container  create-button-container">
-				<button class="btn btn-success btn-create" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<button class="btn btn-success btn-create" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
 					<strong>+
 						Добавить</strong></button>
-			</div>
-			<!-- Modal -->
-			<div class="modal fade mt-2" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-				aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body" style="display: flex;justify-content: center"><h3>Добавить новый курс?</h3></div>
-						<div class="modal-footer mt-3" style="display:flex; justify-content: space-evenly">
-							<button type="submit" class="btn btn-success" style="width: 160px">Добавить</button>
-							<button type="button" class="btn btn-secondary" style="width: 160px" data-bs-dismiss="modal">Отмена
-							</button>
-						</div>
-					</div>
-				</div>
 			</div>
 			<!-----button ----->
 

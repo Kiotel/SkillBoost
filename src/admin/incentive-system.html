@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SkillBoost</title>
-		<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/index.css">
 	<script src="../js/bootstrap.bundle.min.js" defer></script>
 
@@ -20,7 +20,8 @@
 					<i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="tab-text">Главная</span>
 				</a>
 				<div class="dropdown">
-					<a role="button" href="courses/trainee.html" class="dropdown-toggle list-group-item list-group-item-action py-2 ripple"
+					<a role="button" href="courses/trainee.html"
+						class="dropdown-toggle list-group-item list-group-item-action py-2 ripple"
 						data-bs-toggle="dropdown">
 						<i class="fas fa-chart-area fa-fw me-3"></i><span class="tab-text">Курсы</span></a>
 					<ul class="dropdown-menu">
@@ -109,32 +110,44 @@
 <!--Main layout-->
 <main style="margin-top: 0; display: flex; justify-content: end">
 	<div id="main-container" class="container container-fluid pt-3 ">
-		<div id="cards" class="row text-center">
-			<div class="card item-card">
-				<img src="../assets/hudi.png" alt="Картинка товара">
-				<div class="card-body">
-					1000 <img class="item-card-image" src="" alt="монеты">
+		<form action="" id="bonuses-form">
+			<div id="cards" class="row text-center">
+				<!-------- Бонус --------->
+				<a href="#" class="card item-card text-decoration-none" id="bonus1">
+					<img src="../assets/bonus1.jpg" alt="Картинка товара">
+					<div class="card-body">
+						<div class="d-flex justify-content-center align-items-center">
+							<span style="font-size: 35px">1000</span>
+							<img class="item-card-image ms-2" height="26" width="47" style="height: 26px; width: 47px"
+								src="../assets/coins.svg" alt="монеты">
+						</div>
+					</div>
+				</a><!-------- Бонус --------->
+				<a href="#" class="card item-card text-decoration-none" id="bonus2">
+					<img src="../assets/bonus2.jpg" alt="Картинка товара">
+					<div class="card-body">
+						<div class="d-flex justify-content-center align-items-center">
+							<span style="font-size: 35px">1000</span>
+							<img class="item-card-image ms-2" height="26" width="47" style="height: 26px; width: 47px"
+								src="../assets/coins.svg" alt="монеты">
+						</div>
+					</div>
+				</a><!-------- Бонус --------->
+				<a href="#" class="card item-card text-decoration-none" id="bonus3">
+					<img src="../assets/bonus3.jpg" alt="Картинка товара">
+					<div class="card-body">
+						<div class="d-flex justify-content-center align-items-center">
+							<span style="font-size: 35px">1000</span>
+							<img class="item-card-image ms-2" height="26" width="47" style="height: 26px; width: 47px"
+								src="../assets/coins.svg" alt="монеты">
+						</div>
+					</div>
+				</a>
+				<div id="plus-card" class="card item-card">
+					<a href="#"><img class="item-card-image w-75 h-75" src="../assets/plus.svg" alt="Плюс"></a>
 				</div>
-				<button class="btn btn-success item-card-btn text-white">Купить</button>
 			</div>
-			<div class="card item-card">
-				<img src="../assets/hudi.png" alt="Картинка товара">
-				<div class="card-body">
-					1000 <img class="item-card-image" src="" alt="монеты">
-				</div>
-				<button class="btn btn-success item-card-btn text-white">Купить</button>
-			</div>
-			<div class="card item-card">
-				<img src="../assets/hudi.png" alt="Картинка товара">
-				<div class="card-body">
-					1000 <img class="item-card-image" src="" alt="монеты">
-				</div>
-				<button class="btn btn-success item-card-btn text-white">Купить</button>
-			</div>
-			<div id="plus-card" class="card item-card">
-				<a href="#"><img class="item-card-image w-75 h-75" src="../assets/plus.svg" alt="Плюс"></a>
-			</div>
-		</div>
+		</form>
 	</div>
 </main>
 <!--Main layout-->
