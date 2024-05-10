@@ -365,16 +365,7 @@ html::-webkit-scrollbar {
   gap: 30px
 }
 
-#library {
-  border-radius: 12px;
-  margin: 10px 0 0;
-  max-height: 780px;
-  overflow-y: scroll;
-  box-shadow: 0 1px 3px 1px lightgray;
-  display: flex;
-  justify-content: center;
-  gap: 30px
-}
+
 
 #library::-webkit-scrollbar {
   scrollbar-gutter: stable;
