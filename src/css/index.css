@@ -764,3 +764,7 @@ html::-webkit-scrollbar {
   border-radius: 20px;
   background: #fff;
 }
+
+.questions-container {
+  max-height: 760px;
+}
